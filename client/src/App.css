@@ -1,0 +1,326 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 0px;
+}
+
+nav { 
+    display: flex;
+    padding: 10px 20px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    justify-content: space-around;
+}
+
+nav a {
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px #333;
+    transition: color 2s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover{
+    text-shadow: 2px 2px 5px rgb(255, 255, 255);
+}
+
+#auth-div{
+    display: flex
+}
+
+#auth-form input{
+    padding: 10px
+}
+
+.usernameInput{
+    margin-bottom: 10px;
+    border-radius: 10px
+}
+
+.passwordInput{
+    margin-bottom: 10px;
+    border-radius: 10px
+}
+
+.login-button{
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    background-color: #7dbcff;
+    font-size: 1rem;
+    color: #ffffff;
+    cursor: pointer;
+    
+}
+
+.login > button{
+    border-radius: 10px;
+    height: 30px;
+    background-color: #cce5ff;
+    font-size: 1rem;
+    cursor: pointer;
+    color:#000000
+}
+
+.errorMsg {
+    background-color: black;
+    margin: 11px auto;
+    border-radius: 3px;
+    color: red;
+}
+
+.goal-item .icon {
+    cursor: pointer;
+    font-size: 1rem; /* Adjust size as needed */
+    color: gray;
+    transition: color 0.3s ease;
+    margin: 0 5px;
+}
+
+.goal-item .icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.login {
+    margin: 50px 20px;
+    width: 250px;
+    border: 1px solid black;
+    padding: 90px 20px;
+    height: 311px;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title-container {
+    text-align: center;
+    background-color: #fff;
+    padding: 200px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    font-size: 4.5rem;
+    color: #333;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out; 
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.199);
+}
+
+.catchphrase {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 20px;
+    opacity: 0; 
+    animation: slideInFromBottom 4s ease-in-out 1s forwards; 
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.form-container {
+    max-width: 90%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:#d0e0f0
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+textarea[type="text"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color:#d0e0f0;
+    resize: none;
+}
+
+textarea[type="text"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+button[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/*-------------------------------------------------------------------*/
+
+.webform-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+.website-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+.website-item {
+    background: linear-gradient(
+        135deg, /* Angle for top-left to bottom-right gradient */
+        rgb(255, 255, 255) 0%, /* Light red at the start */
+        rgba(255, 255, 255, 0.884) 25%, /* Slightly darker red */
+        #007bff42 75%, /* Gradual transition to blue */
+        rgba(163, 163, 253, 0.1) 100% /* Light blue at the end */
+    );
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+    width: 45%;
+}
+
+.website-item h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    color: #333;
+}
+
+.website-item p {
+    margin: 0 0 10px;
+    color: #777;
+}
+
+.website-item h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.website-item a {
+    color: #007bff;
+    text-decoration: none;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.199);
+    transition: color 0.3s ease;
+}
+
+.website-item a:hover {
+    color: #0151a7;
+}
+/*-----------------------------------------------------*/
+.goal-container {
+    margin-top: 20px;
+}
+
+.goal-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-radius: 4px;
+}
+
+.goal-item h2 {
+    margin: 0 0 10px;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+    color: #333;
+}
+
+.goal-item p {
+    margin: 0 0 10px;
+    color: #494949;
+}
+
+.goal-item h6 {
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+}
+
+.goal-item a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.goal-item a:hover {
+    color: #0056b3;
+}
+
+.delete-btn {
+    padding: 5px 10px;
+    background-color: #5f5758;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+    
+}
+
